@@ -55,21 +55,19 @@ def retryloop(attempts, timeout=None, delay=0, backoff=1):
 
 if __name__ == '__main__':
     domain = 'https://itunes.apple.com/'
-    
-    pprint("Collecting apps people want translated to Japanese...")
 
     out_string = ''
-    f = open('japanese.apps.txt')
+    f = open('apps.txt')
     lines = f.readlines()
     f.close()
     print str(len(lines)) + " app IDs contained."
     
     try:
-        os.remove('japanese.wanted.csv')
+        os.remove('result.csv')
     except OSError:
         pass
     
-    f2 = open('japanese.wanted.csv','a')
+    f2 = open('result.csv','a')
     header = 'App ID,Title,Rating (Bayesian),Rating count,Term hits,Reviews\n'
     f2.write(header.encode('utf-8'))
     
