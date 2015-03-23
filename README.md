@@ -1,6 +1,6 @@
 ## Appstore tools
 
-A small collection of tools used for [Xavee](../xavee).
+A small collection of tools used for [Xavee](../../../xavee).
 
 * `collect_iphone_ranking.py`: this is a tool to collect the current iTunes Appstore rankings for a user-defined list of countries.
 Apps can be narrowed down to a ranking type or one or more categories.
