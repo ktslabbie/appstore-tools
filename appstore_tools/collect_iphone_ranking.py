@@ -3,9 +3,8 @@ Created on Jun 12, 2014
 
 This is a tool to collect the current iTunes Appstore rankings for a user-defined list of countries.
 Apps can be narrowed down to a ranking type or one or more categories.
-Returned is a .csv file with the ranking of each app in each country,
-as well as a list of how each of these apps are ranked in the other specified countries.
-This provides a quick overview of how apps are ranked across different countries. 
+Returned are .csv files with the rankings for each country,
+along with the ranking of each app in the other specified countries on the same line, to allow for quick comparison. 
 
 @author: Kristian Slabbekoorn
 '''
